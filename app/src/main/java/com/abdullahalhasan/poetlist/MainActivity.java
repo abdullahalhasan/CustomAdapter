@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         contactList.add(contact);
         adapter = new ContactAdapter(MainActivity.this,contactList);
         listView.setAdapter(adapter);
+        nameET.getText().clear();
+        phoneNoET.getText().clear();
 
     }
 }
